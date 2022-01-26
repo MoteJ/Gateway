@@ -1,0 +1,152 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "com.nwpu.gateway.infrastructure.shiro.JwtProperties",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.JwtProperties"
+    },
+    {
+      "name": "login",
+      "type": "com.nwpu.gateway.infrastructure.shiro.LoginProperties",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.LoginProperties"
+    },
+    {
+      "name": "spring.redis.clusters.bak",
+      "type": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.master",
+      "type": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.access-expire-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.JwtProperties"
+    },
+    {
+      "name": "jwt.refresh-expire-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.JwtProperties"
+    },
+    {
+      "name": "jwt.refresh-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.JwtProperties"
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.JwtProperties"
+    },
+    {
+      "name": "login.pass-urls",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.nwpu.gateway.infrastructure.shiro.LoginProperties"
+    },
+    {
+      "name": "spring.redis.clusters.bak.block-when-exhausted",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.max-redirects",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.nodes",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.password",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.bak.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesBak"
+    },
+    {
+      "name": "spring.redis.clusters.master.block-when-exhausted",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.max-redirects",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.nodes",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.password",
+      "type": "java.lang.String",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    },
+    {
+      "name": "spring.redis.clusters.master.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.nwpu.gateway.infrastructure.redis.config.RedisPropertiesMaster"
+    }
+  ],
+  "hints": []
+}

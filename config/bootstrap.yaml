@@ -1,0 +1,57 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /gateway
+  undertow:
+    io-threads: 4
+    worker-threads: 32
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    clusters:
+      master:
+        password: mote346751
+        nodes: 127.0.0.1:6379,127.0.0.1:6380,127.0.0.1:6381
+        # 最大连接数（使用负值表示没有限制），默认值为8
+        max-active: 8
+        # 最大空闲连接数
+        max-idle: 8
+        # 最小空闲连接数
+        min-idle: 0
+        # 跨集群执行命令时要遵循的最大重定向数量，必须小于集群节点数
+        max-redirects: 1
+        # 连接池最大阻塞等待时间（使用负值表示没有限制），默认值为-1
+        max-wait: 8000
+        # 当资源池耗尽后，调用者是否需要等待，默认值为true
+        block-when-exhausted: true
+        # 是否在从池中取出连接前进行校验，如果校验失败，则从池中去除连接并尝试取出另一个，默认值为false
+        test-on-borrow: false
+        # 向资源池归还连接时是否做连接有效性检测（ping），检测到无效连接会被移除，默认值为false
+        test-on-return: true
+      bak:
+        password: mote346751
+        nodes: 127.0.0.1:6389,127.0.0.1:6390,127.0.0.1:6391
+        #最大连接数
+        max-active: 8
+        #最大空闲连接数
+        max-idle: 8
+        min-idle: 0
+        max-redirects: 4
+        max-wait: 8000
+        block-when-exhausted: true
+        test-on-borrow: false
+        test-on-return: true
+login:
+  pass-urls:
+    - /login/**
+    - /hello/**
+
+jwt:
+  access-expire-seconds: 300
+  refresh-expire-seconds: 3000
+  secret: 000000000
+  refresh-secret: 1111111
+
+
+
